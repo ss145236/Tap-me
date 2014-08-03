@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Tap_meViewController : UIViewController
-
+@interface Tap_meViewController : UIViewController <UIAlertViewDelegate>
+{
+IBOutlet UILabel *scoreLabel;
+IBOutlet UILabel *timerLabel;
+    NSInteger count;
+    NSInteger seconds;
+    NSTimer *timer;
+    NSInteger maxcount;
+}
+- (IBAction)buttonPressed;
 @end
